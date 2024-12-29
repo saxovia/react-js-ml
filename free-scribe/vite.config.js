@@ -8,4 +8,16 @@ export default defineConfig({
         postcss: './postcss.config.js',
         plugins: [tailwindcss()],
     },
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    worker: ['./src/utils/whisper.worker.js'],
+                },
+            },
+        },
+    },
+    worker: {
+        format: 'es', // Ensure workers use ES module format
+    },
 });
