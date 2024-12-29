@@ -3,7 +3,7 @@ import React from 'react'
 export default function FileDisplay(props) {
     const { handleAudioReset, file, audioStream } = props
     return (
-        <main className='flex-1 p-4 flex flex-col gap-3 text-center sm:gap-4 sm:w-96 justify-center pb-20 w-fit w-72 w- max-w-full mx-auto'>
+        <main className='flex-1 p-4 flex flex-col gap-3 text-center sm:gap-4 sm:w-96 justify-center pb-20 w-72 w- max-w-full mx-auto'>
             <h1 className='font-semibold md:text-6xl sm:text-5xl'>Your <span className='text-blue-400'>File</span></h1>
             <div className='flex flex-col text-left my-4'>
                 <h3 className='font-semibold'>Name</h3>

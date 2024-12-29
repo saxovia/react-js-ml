@@ -17,9 +17,7 @@ function App() {
     setFile(null)
     setAudioStream(null)
   }
-  useEffect(() => {
-    console.log(audioStream)
-  }, [audioStream])
+
 
   const isAudioAvailable = file || audioStream
   return (

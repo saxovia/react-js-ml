@@ -65,7 +65,7 @@ export default function HomePage(props) {
         <main className='flex-1 p-4 flex flex-col gap-3 text-center sm:gap-4  justify-center pb-20'>
             <h1 className='font-semibold md:text-7xl sm:text-6xl'>Free<span className='text-blue-400'>Scribe</span></h1>
             <h3 className='font-medium md:text-lg'>Record<span className='text-blue-400'>&rarr;</span>Transcribe<span className='text-blue-400'>&rarr;</span>Translate</h3>
-            <button onClick={recordingStatus ==='recording' ? stopRecording : startRecording} className='flex specialBtn px-4 rounded-xl items-center text-base justify-between gap-4 mx-auto w-72 max-w-full my-4'>
+            <button onClick={recordingStatus ==='recording' ? stopRecording : startRecording} className='flex specialBtn px-4 py-2 rounded-xl items-center text-base justify-between gap-4 mx-auto w-72 max-w-full my-4'>
                 <p>{recordingStatus==='inactive' ? 'Record' : 'Stop recording'} </p>
                 <div className='flex item-center gap-2'>
                 {duration !== 0 && (<p className='text-sm'>{duration}s</p>)}
